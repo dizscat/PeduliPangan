@@ -1,0 +1,142 @@
+/* Base Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-image: url('https://cdn.b12.io/client_media/ivpHNdvE/1f05a254-bdf9-11ef-a3b9-0242ac110002-jpg-hero_image.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.donate-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.akun {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+/* Account Header */
+.account-header {
+  background-color: #00aaff;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Account Content */
+.account-content {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-prompt {
+  margin-bottom: 20px;
+}
+
+.login-btn {
+  background-color: #fff;
+  color: #00aaff;
+  border: 1px solid #00aaff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.login-btn:hover {
+  background-color: #00aaff;
+  color: #fff;
+}
+
+.account-options {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.account-options li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.account-options a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.account-options a:hover {
+  color: #00aaff;
+} 

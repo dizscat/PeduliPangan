@@ -1,0 +1,570 @@
+/* Original Base Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Original Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.donate-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+.contact-btn {
+  border: 1px solid #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Original Hero Styles */
+.hero {
+  background-image: url('https://cdn.b12.io/client_media/ivpHNdvE/1f05a254-bdf9-11ef-a3b9-0242ac110002-jpg-hero_image.jpeg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.view-services-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Original Features Styles */
+.features {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Original Contact Styles */
+.contact {
+  padding: 80px 0;
+  background: linear-gradient(rgba(91, 141, 77, 0.05), rgba(91, 141, 77, 0.1));
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #5b8d4d;
+}
+
+.section-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.contact-wrapper {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Contact Info Styles */
+.contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(91, 141, 77, 0.2);
+}
+
+.info-card .icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px;
+  background: #5b8d4d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover .icon {
+  transform: rotate(360deg);
+  background: #4a7340;
+}
+
+.info-card h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  flex: 2;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper i {
+  position: absolute;
+  left: 15px;
+  color: #5b8d4d;
+  transition: all 0.3s ease;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.input-wrapper textarea {
+  height: 120px;
+  resize: none;
+}
+
+.input-wrapper input:focus,
+.input-wrapper textarea:focus {
+  border-color: #5b8d4d;
+  box-shadow: 0 0 0 3px rgba(91, 141, 77, 0.1);
+}
+
+.input-wrapper:hover i {
+  color: #4a7340;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background: #5b8d4d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #4a7340;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(91, 141, 77, 0.3);
+}
+
+.submit-btn i {
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover i {
+  transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .info-card {
+    flex: 1;
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form {
+    padding: 20px;
+  }
+
+  .info-card {
+    min-width: 100%;
+  }
+}
+
+/* Original Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.how-it-works {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab-button.active {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.services h2 {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.services h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-content h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.card:hover .card-content h4 {
+    color: #28a745;
+}
+
+.card-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background: linear-gradient(to right, #f9f9f9, #e0f7fa); /* Latar belakang gradasi */
+    border-radius: 10px; /* Sudut melengkung untuk keseluruhan section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+.about-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-content h3, .about-content h2 {
+    color: #5b8d4d; /* Warna teks yang menarik */
+    text-align: left; /* Rata kiri untuk teks */
+}
+
+.about-content p {
+    line-height: 1.6; /* Jarak antar baris untuk keterbacaan */
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Pusatkan gambar */
+}
+
+.about-image img {
+    max-width: 80%; /* Ukuran gambar yang lebih kecil */
+    border-radius: 10px; /* Sudut melengkung untuk gambar */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+}
+
+.about-image img:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Tambahan untuk ikon */
+.about-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.about-icons div {
+    text-align: center;
+}
+
+.about-icons i {
+    font-size: 40px; /* Ukuran ikon */
+    color: #5b8d4d; /* Warna ikon */
+    margin-bottom: 10px; /* Jarak antara ikon dan teks */
+}
+
+/* Blog Section */
+.blog {
+    padding: 40px;
+    background-color: #fff; /* Warna latar belakang putih */
+    border-radius: 10px; /* Sudut melengkung untuk keseluruhan section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Jarak antar artikel */
+}
+
+.blog-posts article {
+    border: 1px solid #ddd; /* Garis batas untuk artikel */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Efek transisi */
+}
+
+.blog-posts article:hover {
+    transform: translateY(-5px); /* Efek angkat saat hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Bayangan lebih dalam saat hover */
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 40px;
+    background-color: #f9f9f9; /* Warna latar belakang yang lebih cerah */
+    border-radius: 10px; /* Sudut melengkung untuk keseluruhan section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Jarak antar testimoni */
+}
+
+.testimonial {
+    border: 1px solid #ddd; /* Garis batas untuk testimoni */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 20px;
+    background-color: #fff; /* Warna latar belakang putih */
+    transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
+}
+
+.testimonial:hover {
+    background-color: #f0f0f0; /* Warna latar belakang saat hover */
+    transform: translateY(-3px); /* Efek angkat saat hover */
+}

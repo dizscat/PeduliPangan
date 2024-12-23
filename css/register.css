@@ -1,0 +1,98 @@
+/* Register Section Styles */
+.register-container {
+    background-color: #ffffff; /* Warna latar belakang putih */
+    padding: 40px; /* Padding */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan lebih dalam */
+    max-width: 500px; /* Lebar maksimum */
+    margin: 50px auto; /* Margin atas dan bawah */
+    text-align: center; /* Rata tengah */
+    transition: transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.register-container:hover {
+    transform: translateY(-5px); /* Efek angkat saat hover */
+}
+
+.register-container h2 {
+    color: #5b8d4d; /* Warna judul */
+    margin-bottom: 20px; /* Margin bawah */
+    font-family: 'Poppins', sans-serif; /* Gaya font */
+}
+
+.register-container .form-group {
+    display: flex; /* Menggunakan Flexbox */
+    flex-direction: column; /* Mengatur elemen dalam kolom */
+    margin-bottom: 20px; /* Margin bawah untuk setiap grup */
+}
+
+.register-container label {
+    display: block; /* Menampilkan label sebagai blok */
+    margin-bottom: 5px; /* Margin bawah */
+    color: #333; /* Warna teks label */
+    font-weight: 500; /* Berat font */
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: 100%; /* Lebar penuh */
+    padding: 12px; /* Padding */
+    border: 2px solid #eee; /* Border */
+    border-radius: 5px; /* Sudut melengkung */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transisi border dan bayangan */
+}
+
+.register-container input[type="text"]:focus,
+.register-container input[type="email"]:focus,
+.register-container input[type="password"]:focus {
+    border-color: #5b8d4d; /* Warna border saat fokus */
+    box-shadow: 0 0 5px rgba(91, 141, 77, 0.2); /* Bayangan saat fokus */
+}
+
+.register-container button {
+    background-color: #5b8d4d; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 10px 20px; /* Padding tombol */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Kursor pointer */
+    transition: background-color 0.3s, transform 0.3s; /* Transisi */
+    margin-top: 10px; /* Margin atas untuk tombol */
+}
+
+.register-container button:hover {
+    background-color: #4a7340; /* Warna latar belakang saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.register-container p {
+    margin-top: 20px; /* Margin atas */
+    color: #666; /* Warna teks */
+}
+
+.register-container a {
+    color: #3498db; /* Warna tautan */
+    text-decoration: none; /* Tanpa garis bawah */
+    transition: color 0.3s; /* Transisi warna */
+}
+
+.register-container a:hover {
+    color: #5b8d4d; /* Warna tautan saat hover */
+}
+
+/* Flexbox untuk menempatkan elemen dalam satu baris */
+.form-group {
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: center; /* Menempatkan elemen di tengah */
+    align-items: center; /* Menempatkan elemen secara vertikal di tengah */
+}
+
+.form-group input {
+    flex: 1; /* Membuat input mengambil ruang yang tersedia */
+    margin-right: 10px; /* Margin kanan untuk jarak antara input dan tombol */
+}
+
+.form-group button {
+    flex-shrink: 0; /* Mencegah tombol menyusut */
+}

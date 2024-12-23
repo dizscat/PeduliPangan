@@ -1,0 +1,148 @@
+/* Login Section Styles */
+.container {
+    background-color: #ffffff; /* Warna latar belakang putih */
+    padding: 40px; /* Padding */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    max-width: 400px; /* Lebar maksimum */
+    margin: 100px auto; /* Margin atas dan bawah */
+    text-align: center; /* Rata tengah */
+    transition: transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Efek angkat saat hover */
+}
+
+.container h2 {
+    color: #5b8d4d; /* Warna judul */
+    margin-bottom: 20px; /* Margin bawah */
+    font-family: 'Poppins', sans-serif; /* Gaya font */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Margin bawah untuk setiap grup */
+}
+
+.form-group label {
+    display: block; /* Menampilkan label sebagai blok */
+    margin-bottom: 5px; /* Margin bawah */
+    color: #333; /* Warna teks label */
+    font-weight: 500; /* Berat font */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%; /* Lebar penuh */
+    padding: 12px; /* Padding */
+    border: 2px solid #eee; /* Border */
+    border-radius: 5px; /* Sudut melengkung */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transisi border dan bayangan */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #5b8d4d; /* Warna border saat fokus */
+    box-shadow: 0 0 5px rgba(91, 141, 77, 0.2); /* Bayangan saat fokus */
+}
+button {
+    background-color: #5b8d4d; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 10px 20px; /* Padding tombol */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Kursor pointer */
+    transition: background-color 0.3s, transform 0.3s; /* Transisi */
+    margin-top: 10px; /* Margin atas untuk tombol */
+}
+
+button:hover {
+    background-color: #4a7340; /* Warna latar belakang saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+p {
+    margin-top: 20px; /* Margin atas */
+    color: #666; /* Warna teks */
+}
+
+a {
+    color: #3498db; /* Warna tautan */
+    text-decoration: none; /* Tanpa garis bawah */
+    transition: color 0.3s; /* Transisi warna */
+}
+
+a:hover {
+    color: #5b8d4d; /* Warna tautan saat hover */
+}
+/* Modal Styles */
+modal {
+    display: none; /* Tersembunyi secara default */
+    position: fixed; /* Tetap di tempat */
+    z-index: 1; /* Di atas elemen lain */
+    left: 0;
+    top: 0;
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    overflow: auto; /* Aktifkan scroll jika diperlukan */
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang hitam transparan */
+}
+ .modal-content {
+    background-color: #fefefe; /* Warna latar belakang modal */
+    margin: 15% auto; /* Margin atas dan bawah */
+    padding: 20px; /* Padding */
+    border: 1px solid #888; /* Border */
+    width: 80%; /* Lebar modal */
+    border-radius: 10px; /* Sudut melengkung */
+    text-align: center; /* Rata tengah */
+} 
+ .close {
+    color: #aaa; /* Warna teks untuk tombol tutup */
+    float: right; /* Posisi di kanan */
+    font-size: 28px; /* Ukuran font */
+    font-weight: bold; /* Berat font */
+} 
+ .close:hover,
+ close:focus {
+    color: black; /* Warna saat hover */
+    text-decoration: none; /* Tanpa garis bawah */
+    cursor: pointer; /* Kursor pointer */
+} 
+/* Alert Modal Styles */
+.alert-modal {
+    display: none; /* Tersembunyi secara default */
+    position: fixed; /* Tetap di tempat */
+    z-index: 1; /* Di atas elemen lain */
+    left: 0;
+    top: 0;
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    overflow: auto; /* Aktifkan scroll jika diperlukan */
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang hitam transparan */
+}
+
+.alert-content {
+    background-color: #fefefe; /* Warna latar belakang modal */
+    margin: 15% auto; /* Margin atas dan bawah */
+    padding: 20px; /* Padding */
+    border: 1px solid #888; /* Border */
+    width: 80%; /* Lebar modal */
+    border-radius: 10px; /* Sudut melengkung */
+    text-align: center; /* Rata tengah */
+}
+
+.close-alert {
+    color: #aaa; /* Warna teks untuk tombol tutup */
+    float: right; /* Posisi di kanan */
+    font-size: 28px; /* Ukuran font */
+    font-weight: bold; /* Berat font */
+}
+
+.close-alert:hover,
+.close-alert:focus {
+    color: black; /* Warna saat hover */
+    text-decoration: none; /* Tanpa garis bawah */
+    cursor: pointer; /* Kursor pointer */
+}
