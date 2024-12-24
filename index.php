@@ -32,7 +32,7 @@ if (!isset($_SESSION['user'])) {
           <li><a href="#about">About</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#donate" style="color: #5b8d4d">Donate</a></li>
+          <li><a href="../feature/homepage.php" style="color: #5b8d4d">Donate</a></li>
           <li><a href="account.php">Akun</a></li>
         </ul>
         <div class="burger" onclick="toggleMenu()">

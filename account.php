@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Akun Pengguna</title>
     <link rel="stylesheet" href="css/account.css">
-
 </head>
 <body>
     <header>
@@ -12,29 +11,40 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="index.php">Beranda</a></li>
-                <li><a href="admin.php">Admin</a></li>
+                <?php if (isset($_SESSION['user'])): ?>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light me-2" href="../logout.php">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </li>
+                <?php else: ?>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light me-2" href="../feature/login.php">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-light" href="../feature/register.php">
+                            <i class="fas fa-user-plus"></i> Register
+                        </a>
+                    </li>
+                <?php endif; ?>
             </ul>
         </nav>
     </header>
 
-
     <section class="account-content">
-    <h1>Akun</h1>
+        <h1>Akun</h1>
         <div class="login-prompt">
-            <p>Masuk untuk nikmati mudahnya donasi dan akses ke fitur lainnya!</p>
-            <button class="login-btn"><a href="../feature/login.php">Masuk sekarang</button>
-            <p>Belum punya akun? <a href="../register.php">Daftar</a></p>
+
+            <ul class="account-options">
+                <li><a href="#">Bantuan</a></li>
+                <li><a href="#">Tentang Kitabisa</a></li>
+                <li><a href="#">Syarat & Ketentuan</a></li>
+                <li><a href="#">Akuntabilitas & Transparansi</a></li>
+            </ul>
         </div>
-
-        <ul class="account-options">
-            <li><a href="#">Bantuan</a></li>
-            <li><a href="#">Tentang Kitabisa</a></li>
-            <li><a href="#">Syarat & Ketentuan</a></li>
-            <li><a href="#">Akuntabilitas & Transparansi</a></li>
-        </ul>
     </section>
-
-
 
     <script src="script.js"></script>
 </body>

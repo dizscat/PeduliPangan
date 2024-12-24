@@ -27,7 +27,7 @@ $foodRequests = $stmtFood->fetchAll(PDO::FETCH_ASSOC);
                         </div>
                         <div class="card-body">
                             <p class="card-text"><?php echo htmlspecialchars($request['description']); ?></p>
-                            <p class="fw-bold text-primary">Target: $<?php echo number_format($request['amount'], 2); ?></p>
+                            <p class="fw-bold text-primary">Target: Rp.<?php echo number_format($request['amount'], 2); ?></p>
                             <?php if (isLoggedIn() && isDonatur()): ?>
                                 <a href="make_donation.php?request_id=<?php echo $request['id']; ?>" class="btn btn-outline-primary w-100">Donasi Sekarang</a>
                             <?php else: ?>

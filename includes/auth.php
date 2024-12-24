@@ -26,7 +26,7 @@ function requireLogin() {
 
 function requireAdmin() {
     if (!isAdmin()) {
-        header('Location: index.php');
+        header('Location: ../dashboard/index.php');
         exit();
     }
 }

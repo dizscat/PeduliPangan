@@ -27,6 +27,10 @@ require_once __DIR__ . '/../includes/auth.php';  // Gunakan path absolut
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <?php if (isLoggedIn()): ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.php">
+                         <i class="fas fa-home"></i> Home
+                        </a>
                     <?php if (isAdmin()): ?>
                         <li class="nav-item">
                             <a class="nav-link" href="../dashboard/index.php">
@@ -62,6 +66,8 @@ require_once __DIR__ . '/../includes/auth.php';  // Gunakan path absolut
                         </a>
                     </li>
                 <?php else: ?>
+ 
+                    </li>
                     <li class="nav-item">
                         <a class="btn btn-outline-light me-2" href="../feature/login.php">
                             <i class="fas fa-sign-in-alt"></i> Login
@@ -73,6 +79,7 @@ require_once __DIR__ . '/../includes/auth.php';  // Gunakan path absolut
                         </a>
                     </li>
                 <?php endif; ?>
+  
             </ul>
         </div>
     </div>

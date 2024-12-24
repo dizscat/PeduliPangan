@@ -31,7 +31,7 @@ $donations = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <tr>
                     <td><?php echo htmlspecialchars($donation['donator_name']); ?></td>
                     <td><?php echo htmlspecialchars($donation['request_title']); ?></td>
-                    <td>$<?php echo number_format($donation['amount'], 2); ?></td>
+                    <td>Rp<?php echo number_format($donation['amount'], 2); ?></td>
                     <td><?php echo date("F j, Y, g:i a", strtotime($donation['created_at'])); ?></td>
                 </tr>
             <?php endforeach; ?>

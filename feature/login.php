@@ -27,7 +27,7 @@ require_once '../includes/auth.php';  // Gunakan path absolut
                     </form>
                 </div>
                 <div class="card-footer text-center">
-                    <p class="mb-0">Don't have an account? <a href="../register.php" class="text-primary">Register</a></p>
+                    <p class="mb-0">Don't have an account? <a href="../feature/register.php" class="text-primary">Register</a></p>
                 </div>
             </div>
         </div>
